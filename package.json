@@ -16,6 +16,7 @@
     "android",
     "react-component"
   ],
+  "homepage": "https://github.com/taskrabbit/react-native-zendesk-chat.git",
   "author": "jrichardlai",
   "license": "MIT"
 }
