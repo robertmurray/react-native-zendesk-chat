@@ -7,14 +7,16 @@ Pod::Spec.new do |s|
   s.version      = package['version']
   s.summary      = package['description']
   s.license      = package['license']
-
   s.authors      = package['author']
   s.homepage     = package['homepage']
-  s.platform     = :ios, "9.0"
-
+  s.platform     = :ios, "11.0"
   s.source       = { :git => "https://github.com/robertmurray/react-native-zendesk-chat.git", :tag => "v#{s.version}" }
   s.source_files = "ios/*.{h,m}"
-  s.frameworks   = 'Foundation', 'UIKit'
+  s.requires_arc = true
+  s.static_framework = true
+  s.framework    = 'Foundation'
+  s.framework    = 'UIKit'
+
   s.dependency 'React', '16.11.0'
   s.dependency 'ZDCChat', '1.4.4'
 end
