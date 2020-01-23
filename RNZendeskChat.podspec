@@ -12,8 +12,7 @@ Pod::Spec.new do |s|
   s.homepage     = package['homepage']
   s.platform     = :ios, "9.0"
 
-  s.source       = { :git => "https://github.com/taskrabbit/react-native-zendesk-chat.git", :tag => "v#{s.version}" }
+  s.source       = { :git => "https://github.com/robertmurray/react-native-zendesk-chat.git", :tag => "v#{s.version}" }
   s.source_files = "ios/*.{h,m}"
-  s.dependency 'React'
-  s.dependency 'ZDCChat'
+  s.dependency 'ZDCChat', '1.4.4'
 end
