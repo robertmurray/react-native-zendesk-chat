@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
   s.framework    = 'Foundation'
   s.framework    = 'UIKit'
 
-  s.dependency 'React', '16.11.0'
-  s.dependency 'ZDCChat', '1.4.4'
+  s.dependency 'React'
+  s.dependency 'ZDCChat'
 end
